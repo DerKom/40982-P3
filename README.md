@@ -27,7 +27,7 @@ Este repositorio contiene la **Práctica 3** donde se utilizan técnicas de proc
 Este proyecto fue desarrollado por:
 
 - [![GitHub](https://img.shields.io/badge/GitHub-Francisco%20Javier%20L%C3%B3pez%E2%80%93Dufour%20Morales-green?style=flat-square&logo=github)](https://github.com/gitfrandu4)
-- [![GitHub](https://img.shields.io/badge/GitHub-Marcos%20V%C3%A1zquez%20Tasc%C3%B3n-purple?style=flat-square&logo=github)](https://github.com/DerKom)
+- [![GitHub](https://img.shields.io/badge/GitHub-Marcos%20V%C3%A1zquez%20Tasc%C3%B3n-blue?style=flat-square&logo=github)](https://github.com/DerKom)
 
 ## Tareas
 
@@ -40,7 +40,6 @@ Este proyecto fue desarrollado por:
 - OpenCV Documentation: https://docs.opencv.org/
 - NumPy Documentation: https://numpy.org/doc/
 - Matplotlib Documentation: https://matplotlib.org/stable/contents.html
-- Niklas Roy - **"My Little Piece of Privacy"**: [niklasroy.com/project/100/my-little-piece-of-privacy](https://www.niklasroy.com/project/100/my-little-piece-of-privacy)
 - OpenCV Documentation: [docs.opencv.org](https://docs.opencv.org/)
 - NumPy Documentation: [numpy.org/doc](https://numpy.org/doc/)
 - Tutoriales de Python y OpenCV: [pyimagesearch.com](https://www.pyimagesearch.com/)
