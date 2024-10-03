@@ -4,7 +4,7 @@ Este repositorio contiene la **Práctica 3** donde se utilizan técnicas de proc
 
 # Índice
 
-- [Práctica 3. Detección y reconocimiento de formas](#Práctica 3. Detección y reconocimiento de formas)
+- [Práctica 3. Detección y reconocimiento de formas](#práctica-3-detección-y-reconocimiento-de-formas)
 - [Índice](#índice)
   - [Librerías utilizadas](#librerías-utilizadas)
   - [Autores](#autores)
