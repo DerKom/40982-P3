@@ -137,7 +137,16 @@ for coin in coins:
 Se calcula y muestra la suma total del valor de todas las monedas detectadas.
 
 #### Resultados
-AÑADIR LOS RESULTADOS AQUI
+<table>
+  <tr>
+    <td style="text-align: center; padding-right: 20px;">
+      <img src="results/task1-result1.png" width="200" alt="Resultado Tarea 1.1">
+    </td>
+    <td style="text-align: center;">
+      <img src="results/task1-result2.png" width="450" alt="Resultado Tarea 1.2">
+    </td>
+  </tr>
+</table>
 
 ### Tarea 2
 
