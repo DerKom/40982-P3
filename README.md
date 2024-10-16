@@ -10,6 +10,15 @@ Este repositorio contiene la **Práctica 3** donde se utilizan técnicas de proc
   - [Autores](#autores)
   - [Tareas](#tareas)
     - [Tarea 1](#tarea-1)
+      - [Definición de Diámetros de Monedas](#definición-de-diámetros-de-monedas)
+      - [Redimensionar la Imagen](#redimensionar-la-imagen)
+      - [Conversión a Escala de Grises y Suavizado](#conversión-a-escala-de-grises-y-suavizado)
+      - [Detección de Círculos](#detección-de-círculos)
+      - [Almacenar Monedas Detectadas](#almacenar-monedas-detectadas)
+      - [Selección de Moneda de Referencia con Click](#selección-de-moneda-de-referencia-con-click)
+      - [Identificación de Monedas Restantes](#identificación-de-monedas-restantes)
+      - [Mostrar Resultado y Calcular Suma Total](#mostrar-resultado-y-calcular-suma-total)
+      - [Resultados](#resultados)
     - [Tarea 2](#tarea-2)
   - [Referencias y bibliografía](#referencias-y-bibliografía)
 
@@ -34,7 +43,7 @@ Este proyecto fue desarrollado por:
 ### Tarea 1
 La tarea consiste en localizar las monedas dentro de una imagen y realizar la suma de sus valores. Para ello, seleccionamos la moneda de 1eur como referencia y el programa logra la funcionalidad deseada de la siguiente manera:
 
-### Definición de Diámetros de Monedas
+#### Definición de Diámetros de Monedas
 ```python
 diametros_monedas = {
     '1 cent': 16.25,
@@ -149,6 +158,8 @@ Se calcula y muestra la suma total del valor de todas las monedas detectadas.
 </table>
 
 ### Tarea 2
+
+
 
 ## Referencias y bibliografía
 
