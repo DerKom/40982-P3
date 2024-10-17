@@ -19,7 +19,18 @@ Este repositorio contiene la **Práctica 3** donde se utilizan técnicas de proc
       - [Identificación de Monedas Restantes](#identificación-de-monedas-restantes)
       - [Mostrar Resultado y Calcular Suma Total](#mostrar-resultado-y-calcular-suma-total)
       - [Resultados](#resultados)
-    - [Tarea 2](#tarea-2)
+    - [Tarea 2 - Clasificación de Partículas](#tarea-2---clasificación-de-partículas)
+      - [Introducción](#introducción)
+      - [Conjunto de Datos](#conjunto-de-datos)
+      - [Metodología](#metodología)
+        - [1. Preprocesamiento de Imágenes](#1-preprocesamiento-de-imágenes)
+        - [2. Segmentación](#2-segmentación)
+        - [3. Detección de Contornos](#3-detección-de-contornos)
+        - [4. Extracción de Características](#4-extracción-de-características)
+        - [5. Clasificación](#5-clasificación)
+        - [6. Evaluación](#6-evaluación)
+      - [Resultados](#resultados-1)
+      - [Matriz de Confusión](#matriz-de-confusión)
   - [Referencias y bibliografía](#referencias-y-bibliografía)
 
 ## Librerías utilizadas
@@ -157,8 +168,69 @@ Se calcula y muestra la suma total del valor de todas las monedas detectadas.
   </tr>
 </table>
 
-### Tarea 2
+### Tarea 2 - Clasificación de Partículas
 
+#### Introducción
+
+En esta tarea abordamos la clasificación de partículas encontradas en playas de Canarias, centrándonos en tres categorías: **fragmentos plásticos**, **pellets** y **alquitrán**. Utilizamos imágenes de cada categoría para extraer características geométricas y de apariencia que faciliten su clasificación.
+
+Puede ejecutar el cuaderno de Jupyter `VC_P3_T2.ipynb` para ver el código y los resultados detallados.
+
+#### Conjunto de Datos
+
+Trabajamos con tres imágenes, cada una correspondiente a una categoría específica:
+
+- **Fragmentos**: Plásticos de menos de 5 mm (microplásticos).
+- **Pellets**: Partículas esféricas plásticas de menos de 5 mm.
+- **Alquitrán**: Restos de petróleo comunes en las playas.
+
+![Imagen de Fragmentos](results/fragmentos.png)
+
+#### Metodología
+
+##### 1. Preprocesamiento de Imágenes
+
+- **Conversión a Escala de Grises**: Simplificamos las imágenes para el procesamiento.
+- **Desenfoque Gaussiano**: Reducimos el ruido y mejoramos la segmentación.
+- **Apertura Morfológica**: Eliminamos pequeños objetos y ruido residual.
+
+##### 2. Segmentación
+
+- **Umbralización de Otsu**: Segmentamos las partículas del fondo.
+- **Inversión de Imágenes**: Aseguramos que las partículas sean blancas sobre fondo negro.
+
+##### 3. Detección de Contornos
+
+- **Encontrar Contornos**: Identificamos los contornos de las partículas.
+- **Filtrado por Área**: Eliminamos contornos que no corresponden a partículas reales estableciendo umbrales de área.
+
+##### 4. Extracción de Características
+
+Para cada partícula detectada, extraemos:
+
+- Área
+- Perímetro
+- Compacidad (`C = P² / A`)
+- Relación de Aspecto (ancho/alto)
+- Extensión (área de la partícula / área del contenedor)
+- Relación de Ejes de la Elipse Ajustada
+
+##### 5. Clasificación
+
+- **Clasificador Basado en Reglas**: Implementamos un clasificador manual utilizando umbrales derivados del análisis estadístico.
+- **Asignación de Etiquetas**: Clasificamos cada partícula en una de las tres categorías.
+
+##### 6. Evaluación
+
+- **Matriz de Confusión**: Evaluamos el rendimiento del clasificador.
+- **Informe de Clasificación**: Calculamos métricas como precisión, recall y F1-score.
+
+#### Resultados
+
+#### Matriz de Confusión
+
+<img src='results/confusion_matrix.png' width='400'>
+<!-- <img src='results/confusion_matrix_2.png' width='400'> -->
 
 
 ## Referencias y bibliografía
@@ -168,4 +240,3 @@ Se calcula y muestra la suma total del valor de todas las monedas detectadas.
 - Matplotlib Documentation: https://matplotlib.org/stable/contents.html
 - OpenCV Documentation: [docs.opencv.org](https://docs.opencv.org/)
 - NumPy Documentation: [numpy.org/doc](https://numpy.org/doc/)
-- Tutoriales de Python y OpenCV: [pyimagesearch.com](https://www.pyimagesearch.com/)
